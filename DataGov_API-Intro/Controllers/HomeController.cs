@@ -25,7 +25,7 @@ namespace DataGov_API_Intro.Controllers
             httpClient.DefaultRequestHeaders.Accept.Add(
                 new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-            string NATIONAL_PARK_API_PATH = BASE_URL + "/parks?limit=20";
+            string NATIONAL_PARK_API_PATH = BASE_URL + "/parks?limit=50";
             string parksData = "";
 
             Parks parks = null;

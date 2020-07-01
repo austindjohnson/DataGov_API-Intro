@@ -4,10 +4,12 @@
   ViewData["Title"] = "Index";
 }
 
-<h2>Index</h2>
+<h2>National Parks Index</h2>
+<br/>
+<h3> Park Name, State, Latitude and Longitude </h3>
 
 @foreach (DataGov_API_Intro.Models.Park park in Model.data)
 {
-  @(park.parkCode + " " + park.fullName + " " + park.latLong)
+  @(park.fullName + " " + park.states + " " + park.latLong)
   <br />
 }
